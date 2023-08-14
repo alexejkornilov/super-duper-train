@@ -1,0 +1,63 @@
+body{
+    background-color: #003f59;
+}
+.qforms {
+    background: #fff;
+    background: var(--qwarm-tab-background,#fff);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    background-color: azure;
+}
+
+.itClient {
+    flex: 1 1;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.qforms>div {
+    align-items: center;
+    border-left: 1px solid #C1C5C7;
+    color: #003f59;
+    /*color: var(--qbasefontcolor);*/
+    cursor: pointer;
+    display: flex;
+    font-family: SourceSansPro;
+    font-family: var(--qfontfamily,"arial");
+    font-size: 11pt;
+    font-size: calc(var(--qfontsize, 9px) + 1pt);
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.qforms>div {
+    /*margin: 8px 2px;*/
+    /*padding: 0 12px;*/
+}
+
+.qforms .active {
+    z-Index: 219;
+    background: #deedf3;
+    border: none;
+    box-shadow: 0 2px 6px #6d8dad25;
+    color: #003f59;
+    cursor: pointer;
+    font-size: 11pt;
+    font-size: calc(10pt, 9px) + 1pt);
+    font-weight: 700;
+    margin: 0 2px;
+    padding: 0 2px 0 12px;
+    -webkit-user-select: none;
+    user-select: none;
+}
