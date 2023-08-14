@@ -54,13 +54,13 @@ const elements = document.querySelectorAll('.qformtab');
                 const changePoint = parentSize.left + nextSiblingBound.left + nextSiblingBound.width / 2;
                 if (viewport_x - startTouchPosition - 10 + itemSize.width > changePoint) {
                     console.log('change')
-                    // emptyItem.before(nextSibling)
+                    emptyItem.before(nextSibling)
                     // draggableItem.before(nextSibling)
 
                     emptyItem.style.transition = 'transform 2000ms ease 0s';
 
 
-                    console.log(emptyItem.style.transition)
+                    // console.log(emptyItem.style.transition)
                     nextSibling.style.transform = 'translate(0px, 0px)';
                     nextSibling.style.transition = 'transform 2000ms ease 0s';
 
